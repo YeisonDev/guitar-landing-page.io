@@ -1,5 +1,9 @@
 /* general styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -213,15 +217,15 @@ a {
 }
 
 .strat{
-  background-image: url(../images/guitar-model-strat.jpg);
+  background-image: url("../images/guitar-model-strat.webp");
 }
 
 .flying-v{
-  background-image: url(../images/guitar-model-flying-v.jpg);
+  background-image: url("../images/guitar-model-flying-v.webp");
 }
 
 .les-paul{
-  background-image: url(../images/guitar-model-gibson.jpg);
+  background-image: url("../images/guitar-model-gibson.webp");
 }
 
 .card-bg {
@@ -375,6 +379,12 @@ a {
 
 /* media-query to make the features responsive*/
 
+@media(max-width: 1287px){
+  #intro-section-bg{
+    height: 50vh;
+  }
+}
+
 @media (max-width: 1000px) {
   .feature{
     width: 270px;
@@ -389,6 +399,8 @@ a {
     flex-direction: column-reverse;
   }
 }
+
+
 
 @media (max-width: 600px) {
   #header{
@@ -409,8 +421,3 @@ a {
   }
 }
 
-@media(max-width: 1287px){
-  #intro-section-bg{
-    height: 50vh;
-  }
-}
